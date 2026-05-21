@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Register">
     <!-- Header -->
     <div class="text-center mb-6">
         <h2 class="text-2xl font-bold text-gray-900">Buat Akun Baru</h2>
@@ -10,7 +10,7 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Nama Lengkap')" class="text-gray-700 font-medium" />
+            <x-input-label for="name" :value="__('Nama Lengkap')" class="!text-black font-medium" />
             <x-text-input id="name"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary" type="text"
                 name="name" :value="old('name')" required autofocus autocomplete="name" />
@@ -19,7 +19,7 @@
 
         <!-- Email Address -->
         <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" class="text-gray-700 font-medium" />
+            <x-input-label for="email" :value="__('Email')" class="!text-black font-medium" />
             <x-text-input id="email"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary"
                 type="email" name="email" :value="old('email')" required autocomplete="username" />
@@ -28,7 +28,7 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" class="text-gray-700 font-medium" />
+            <x-input-label for="password" :value="__('Password')" class="!text-black font-medium" />
             <x-text-input id="password"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary"
                 type="password" name="password" required autocomplete="new-password" />
@@ -38,7 +38,7 @@
         <!-- Confirm Password -->
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Konfirmasi Password')"
-                class="text-gray-700 font-medium" />
+                class="!text-black font-medium" />
             <x-text-input id="password_confirmation"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary"
                 type="password" name="password_confirmation" required autocomplete="new-password" />

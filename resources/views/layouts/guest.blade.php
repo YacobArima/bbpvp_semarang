@@ -1,3 +1,4 @@
+@props(['title' => null])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -7,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
-    <title>{{ config('app.name', 'BBPVP Semarang') }}</title>
+    <title>{{ $title ? $title . ' - ' . config('app.name', 'BBPVP Semarang') : config('app.name', 'BBPVP Semarang') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

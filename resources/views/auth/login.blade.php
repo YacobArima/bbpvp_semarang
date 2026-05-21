@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Login">
     <!-- Header -->
     <div class="text-center mb-6">
         <h2 class="text-2xl font-bold text-gray-900">Selamat Datang Kembali</h2>
@@ -13,7 +13,7 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" class="text-gray-700 font-medium" />
+            <x-input-label for="email" :value="__('Email')" class="!text-black font-medium" />
             <x-text-input id="email"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary"
                 type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
@@ -22,7 +22,7 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" class="text-gray-700 font-medium" />
+            <x-input-label for="password" :value="__('Password')" class="!text-black font-medium" />
             <x-text-input id="password"
                 class="block mt-1 w-full rounded-xl border-gray-200 focus:border-primary focus:ring-primary"
                 type="password" name="password" required autocomplete="current-password" />

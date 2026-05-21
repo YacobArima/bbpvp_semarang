@@ -10,13 +10,11 @@ Route::get('/', function () {
 })->name('home');
 
 
-
 Route::get('/dashboard', function () {
-    // Only admin can access dashboard
     if (auth()->user()->role !== 'admin') {
         return redirect()->route('alumni.public');
     }
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
