@@ -2,6 +2,10 @@
 
 // Ensure temporary storage directories exist in /tmp for Vercel Serverless
 $storagePaths = [
+    '/tmp/storage',
+    '/tmp/storage/app',
+    '/tmp/storage/app/public',
+    '/tmp/storage/framework',
     '/tmp/storage/framework/views',
     '/tmp/storage/framework/cache',
     '/tmp/storage/framework/cache/data',
